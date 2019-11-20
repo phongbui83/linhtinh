@@ -7,5 +7,5 @@ echo "Delete All Images"
 docker images | awk '{if (NR>1) {print'$3'}}' | xargs docker rmi
 echo "Prune System, Volumes, Network"
 echo "y" | docker system prune
-echo "y" | docker volumes prune
+echo "y" | docker volume prune
 echo "y" | docker network prune
