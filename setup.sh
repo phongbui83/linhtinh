@@ -11,4 +11,5 @@ apt -y install \
    $(lsb_release -cs) \
    stable"
    apt -y install docker-ce docker-ce-cli containerd.io docker-compose
-   
+   apt -y install vim net-tools git subversion docker-compose python3-pip
+   pip3 install awscli
